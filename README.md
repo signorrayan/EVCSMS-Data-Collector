@@ -52,16 +52,18 @@ The Electric Vehicle Charging Station Data Collector is a comprehensive solution
 
 
 ## Features
-- **Shodan Data Retrieval Script (`main.py`):**
+- **The main module - Shodan Data Retrieval Script (`main.py`):**
   - Identifies EV charging stations using Shodan.
   - Gathers metadata, open ports, and known vulnerabilities.
   - Assesses security risks before proceeding with data extraction.
 
-- **Web Scraping Script (`garo.py`):**
+
+- **Second module - Garo data gathering (`evcs/garo.py`):**
   - Collects real-time operational data from EV charging stations' web interfaces.
   - Utilizes asynchronous web scraping techniques to extract critical information.
 
-- **Data Gathering Script (`ensto.py`):**
+
+- **Third module - Multiple companies data gathering (`evcs/ensto.py`):**
   - Automates the retrieval of detailed information from charging stations.
   - Focuses on EVSE access-point details, CSMS connection information, and more.
   - Utilizes asynchronous requests and BeautifulSoup for HTML parsing.
