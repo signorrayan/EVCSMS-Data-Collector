@@ -6,11 +6,9 @@
 
 
 ## Project Overview
-______________________
 The Electric Vehicle Charging Station Data Collector is a comprehensive solution for collecting, analyzing, and monitoring data from various EV charging stations. The project consists of three interconnected Python modules that leverage Shodan for initial data discovery, data gathering for real-time data extraction, and for detailed information retrieval in a full automated way.
 
 ## Project Workflow
-______________________
 
 ![Workflow](workflow.png)
 
@@ -75,7 +73,6 @@ ______________________
 
 
 ## Features
-______________________
 - **Shodan Data Retrieval Script (`main.py`):**
   - Identifies EV charging stations using Shodan.
   - Gathers metadata, open ports, and known vulnerabilities.
@@ -92,7 +89,7 @@ ______________________
 
 
 ## Getting Started
-______________________
+
 ### Prerequisites
 - Python 3.x
 - Shodan API Key
