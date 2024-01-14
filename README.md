@@ -75,13 +75,16 @@ The Electric Vehicle Charging Station Data Collector is a comprehensive solution
 
 ### Installation
 
-1. **Create a `.env` file:**
+0. **Cloning the project** 
     ```bash
     git clone https://github.com/signorrayan/EVCSMS-Data-Collector.git
     cd EVCSMS-Data-Collector
-    echo 'SHODAN_API_KEY = "<YOUR_KEY_HERE>"' > .env
     ```
-
+1. **Create a `.env` file:** Writing your Shodan API key to it.
+   ```bash
+   echo 'SHODAN_API_KEY = "<YOUR_KEY_HERE>"' > .env
+   ```
+   
 2. **Install requirements:**
     ```bash
     python3 -m venv venv
@@ -94,7 +97,7 @@ The Electric Vehicle Charging Station Data Collector is a comprehensive solution
     ```bash
     python3 main.py
     ```
-The results (3 csv data collection) will be stored in the following directory: `results/*.csv`
+The results (Three csv data collection) will be stored in the following directory: `results/*.csv`
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
