@@ -3,6 +3,7 @@ import csv
 import logging
 import os
 import re
+import random
 
 import shodan
 from dotenv import load_dotenv
@@ -27,7 +28,7 @@ SHODAN_API_KEY = os.environ.get("SHODAN_API_KEY")
 
 # Initialize the Shodan API
 api = shodan.Shodan(SHODAN_API_KEY)
-semaphore = asyncio.Semaphore(10)  # Set the size of the connection pool
+semaphore = asyncio.Semaphore(9)  # Set the size of the connection pool
 
 # Results will be stored in this list
 results = []
@@ -90,7 +91,7 @@ async def extract_data_async(service):
             except shodan.APIError as e:
                 if 'Rate limit reached' in str(e):
                     # Rate limit reached, wait and retry
-                    wait_time = 2 ** _  # Exponential backoff
+                    wait_time = random.randint(2,8)  # Exponential backoff
                     logging.warning(f"Rate limit reached. Retrying in {wait_time} seconds...")
                     await asyncio.sleep(wait_time)
                 else:
@@ -109,6 +110,8 @@ async def main():
                           search_results['matches']]
     await asyncio.gather(*extract_data_tasks)
 
+    os.makedirs('results', exist_ok=True)
+
     # Run garo.run_scraper and ensto.run_scraper in parallel
     await asyncio.gather(
         loop.run_in_executor(None, lambda: garo.run_scraper(garo_ip_addresses)),
@@ -117,7 +120,6 @@ async def main():
 
 
 def write_data_to_csv():
-    os.makedirs('results', exist_ok=True)
     # Define the CSV file name
     output_filename = 'results/shodan_search_results.csv'
 
