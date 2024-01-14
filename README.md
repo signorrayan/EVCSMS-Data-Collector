@@ -20,56 +20,35 @@ The Electric Vehicle Charging Station Data Collector is a comprehensive solution
 
 
 2. **Garo Data Gathering:** Extracts real-time operational data from charging stations' web interfaces.
-    <details>
-    <summary><b>Data Analysis and Insights</b> (Click to see details)</summary>
-    
-    - ### Connection Status Overview:
-      - Understand the overall connection status of the charging stations.
-      - Identify stations with consistently stable or unstable connections.
-    
-    - ### CSMS Connection Analysis:
-      - Analyze the CSMS network connection details to ensure seamless communication with the central management system.
-      - Identify stations facing registration issues or errors.
-    
-    - ### Ethernet Settings Evaluation:
-      - Examine Ethernet settings to assess network configurations.
-      - Identify stations with specific frequency or signal strength patterns.
-    
-    - ### Software Version Distribution:
-      - Investigate the distribution of software versions across stations.
-      - Identify stations that may require updates or maintenance.
-    </details>
+   <details>
+   <summary><b>Data Analysis and Insights</b> (Click to see details)</summary>
+   
+   | Topic                             | Description                                                                                                                                                                     |
+   |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Connection Status Overview        | - Understand the overall connection status of the charging stations.<br>- Identify stations with consistently stable or unstable connections.                                   |
+   | CSMS Connection Analysis          | - Analyze the CSMS network connection details to ensure seamless communication with the central management system.<br>- Identify stations facing registration issues or errors. |
+   | Ethernet Settings Evaluation      | - Examine Ethernet settings to assess network configurations.<br>- Identify stations with specific frequency or signal strength patterns.                                       |
+   | Software Version Distribution     | - Investigate the distribution of software versions across stations.<br>- Identify stations that may require updates or maintenance.                                            |
+
+   </details>
 
 
 3. **Multiple Companies Data Gathering:** Retrieves detailed information for in-depth analysis and reporting.
     <details>
-    <summary><b>Key Observations and Analysis</b> (Click to see details)</summary>
-    
-    - ### Station Information:
-      - The CSV file includes URLs for each charging station, providing a direct link to their respective states.
-    
-    - ### Operational Parameters:
-      - The dataset covers various operational parameters, including LED type, power in watts, operator selection mode, temperature monitoring state, etc.
-    
-    - ### Charging States:
-      - Charging station states, represented by "IDLE," "CONNECTED," or "DISABLED," provide insights into the availability and readiness of the stations for charging.
-    
-    - ### Physical Security Indicators:
-      - "Plug not locked" messages indicate potential physical security risks.
-    
-    - ### Metering Information:
-      - Meter configurations, such as Modbus Meter ABB, are present. Securing these meters is crucial for accurate billing and preventing fraudulent activities.
-    
-    - ### Communication Details:
-      - Mobile network details, including ICCID, IMSI, and IMEI, are provided.
-     
-    - ### Energy Consumption:
-      - Energy-related parameters, such as energy in watt-hours and charging current, offer insights into consumption patterns.
-    
-    - ### Security States:
-      - OCPP states, including "CONNECTED" or "DISABLED," require close monitoring for secure communication. An "IDLE" state signifies readiness for charging.
-      
-    </details>
+   <summary><b>Key Observations and Analysis</b> (Click to see details)</summary>
+   
+   | Topic                           | Description                                                            |
+   |---------------------------------|------------------------------------------------------------------------|
+   | Station Information             | The CSV file includes URLs for each charging station, providing a direct link to their respective states. |
+   | Operational Parameters          | The dataset covers various operational parameters, including LED type, power in watts, operator selection mode, temperature monitoring state, etc. |
+   | Charging States                 | Charging station states, represented by "IDLE," "CONNECTED," or "DISABLED," provide insights into the availability and readiness of the stations for charging. |
+   | Physical Security Indicators    | "Plug not locked" messages indicate potential physical security risks. |
+   | Metering Information            | Meter configurations, such as Modbus Meter ABB, are present. Securing these meters is crucial for accurate billing and preventing fraudulent activities. |
+   | Communication Details           | Mobile network details, including ICCID, IMSI, and IMEI, are provided. |
+   | Energy Consumption              | Energy-related parameters, such as energy in watt-hours and charging current, offer insights into consumption patterns. |
+   | Security States                 | - OCPP states, including "CONNECTED" or "DISABLED," require close monitoring for secure communication. An "IDLE" state signifies readiness for charging. |
+   
+   </details>
 
 
 ## Features
