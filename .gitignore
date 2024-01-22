@@ -160,7 +160,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-/results/
-/Samples/
-/custom_logger/
-/main_backup.py
+results/
+Samples/
+custom_logger/
+main_backup.py
+main.prof
