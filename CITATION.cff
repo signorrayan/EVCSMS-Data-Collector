@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: EVCSMS-Data-Collector
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mohammadreza
+    family-names: Sarayloo
+repository-code: 'https://github.com/signorrayan/EVCSMS-Data-Collector'
+abstract: >-
+  The Electric Vehicle Charging Station Data Collector is a
+  comprehensive solution for collecting, analyzing, and
+  monitoring data from various EV charging stations. The
+  project consists of three interconnected Python modules
+  that leverage Shodan for initial data discovery, data
+  gathering for real-time data extraction, and for detailed
+  information retrieval in a full automated way.
+license: MIT
